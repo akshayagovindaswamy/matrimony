@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Website Template</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold"></h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#features" class="hover:text-blue-600">Features</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#pricing" class="hover:text-blue-600">Pricing</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <button class="md:hidden" onclick="toggleMenu()">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden px-4 pb-4 md:hidden">
+      <a href="#home" class="block py-2">Home</a>
+      <a href="#features" class="block py-2">Features</a>
+      <a href="#about" class="block py-2">About</a>
+      <a href="#pricing" class="block py-2">Pricing</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-24 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Build a Beautiful Website</h2>
+      <p class="text-lg md:text-xl mb-8">A clean, modern template you can customize for any project.</p>
+      <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold shadow">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="max-w-7xl mx-auto px-4 py-20">
+    <h3 class="text-3xl font-bold text-center mb-12">Features</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h4 class="font-semibold text-xl mb-3">Responsive</h4>
+        <p>Looks great on phones, tablets, and desktops.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h4 class="font-semibold text-xl mb-3">Fast</h4>
+        <p>Lightweight and optimized for performance.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h4 class="font-semibold text-xl mb-3">Customizable</h4>
+        <p>Easily edit colors, text, and layout.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-gray-100 py-20">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">About Us</h3>
+      <p class="text-lg">Write a short description about your company, project, or portfolio. Explain what you do and why visitors should trust you.</p>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="max-w-7xl mx-auto px-4 py-20">
+    <h3 class="text-3xl font-bold text-center mb-12">Pricing</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-2xl shadow text-center">
+        <h4 class="font-semibold text-xl mb-2">Starter</h4>
+        <p class="text-3xl font-bold mb-4">€0</p>
+        <p class="mb-6">Basic features</p>
+        <button class="bg-blue-600 text-white px-6 py-2 rounded-xl">Choose</button>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow text-center border-2 border-blue-600">
+        <h4 class="font-semibold text-xl mb-2">Pro</h4>
+        <p class="text-3xl font-bold mb-4">€19</p>
+        <p class="mb-6">Best for individuals</p>
+        <button class="bg-blue-600 text-white px-6 py-2 rounded-xl">Choose</button>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow text-center">
+        <h4 class="font-semibold text-xl mb-2">Business</h4>
+        <p class="text-3xl font-bold mb-4">€49</p>
+        <p class="mb-6">Full features</p>
+        <button class="bg-blue-600 text-white px-6 py-2 rounded-xl">Choose</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-100 py-20">
+    <div class="max-w-3xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Contact Us</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 rounded-xl border" />
+        <input type="email" placeholder="Email" class="w-full p-3 rounded-xl border" />
+        <textarea placeholder="Message" class="w-full p-3 rounded-xl border" rows="5"></textarea>
+        <button class="bg-blue-600 text-white px-6 py-3 rounded-xl w-full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
+      © 2026 YourBrand. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
+
